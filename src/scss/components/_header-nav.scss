@@ -2,21 +2,22 @@
   display: none;
   flex-direction: column;
   gap: 18px;
-  height: 100%;
 
+  height: 100%;
   margin-top: 44px;
 
   @media screen and (min-width: $tablet) {
-    margin-top: 0px;
     display: flex;
+
     flex-direction: row;
     justify-content: space-between;
     gap: 44px;
+
+    margin-top: 0px;
     width: auto;
   }
 
   @media screen and (min-width: $desktop) {
-    // display: flex;
     gap: 69px;
   }
 }
@@ -36,15 +37,20 @@
   display: flex;
   align-items: center;
 
-  border-bottom: 2px solid $bg-color-primary;
-
   &:hover {
-    border-bottom: 2px solid $text-color-accent;
+    background-color: $text-color-accent;
   }
 
   @media screen and (min-width: $tablet) {
+    border-bottom: 2px solid $bg-color-primary;
+
     width: 100%;
     padding: 0;
+
+    &:hover {
+      background-color: $bg-color-primary;
+      border-bottom: 2px solid $text-color-accent;
+    }
   }
 
   @media screen and (min-width: $desktop) {
@@ -56,10 +62,18 @@
   background-color: $bg-color-dark;
 
   &:hover {
-    border-bottom: 2px solid $text-color-accent;
+    background-color: $text-color-accent;
+
+    @media screen and (min-width: $tablet) {
+      &:hover {
+        background-color: $bg-color-dark;
+        border-bottom: 2px solid $text-color-accent;
+      }
+    }
 
     .header-nav-svg-arrow {
       stroke: $bg-color-primary;
+      border-bottom: 2px solid $text-color-accent;
     }
 
     .header-nav-svg {

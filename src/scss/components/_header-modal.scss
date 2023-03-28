@@ -21,6 +21,10 @@
   z-index: 1;
 }
 
+.dark .modal.true {
+  background-color: $bg-color-dark;
+}
+
 .modal-content {
   display: flex;
 
@@ -61,6 +65,10 @@
 
   @media screen and (min-width: $desktop) {
   }
+}
+
+.dark .modal-content.true {
+  background-color: $bg-color-dark;
 }
 
 .modal.true.is-hidden {

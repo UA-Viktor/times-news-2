@@ -49,6 +49,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: $bg-color-primary;
+}
+
+.dark .section.fixed {
+    background-color: $bg-color-dark;
 }
 
 .container {
