@@ -1,0 +1,14 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background-color: $bg-color-dark;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $bg-color-primary;
+}
