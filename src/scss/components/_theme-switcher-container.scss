@@ -1,0 +1,83 @@
+.theme-switcher-container {
+  display: none;
+  gap: 10px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 148px;
+  }
+}
+
+.is-hidden .theme-switcher-container {
+  display: flex;
+  gap: 10px;
+}
+
+.theme-switcher-text {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.theme-switcher-text.light {
+  color: $text-color-accent;
+}
+
+.dark .theme-switcher-text.light {
+  color: $bg-color-primary;
+}
+
+.theme-switcher-text.dark {
+  background-color: $bg-color-primary;
+}
+
+.dark .theme-switcher-text.dark {
+  color: $text-color-accent;
+  background-color: $bg-color-dark;
+}
+
+.theme-switcher-svg {
+  // display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.theme-switcher-svg.light {
+  stroke: $text-color-accent;
+}
+
+.dark .theme-switcher-svg.light {
+  stroke: $text-color-dark;
+}
+
+.theme-switcher-svg.dark {
+  stroke: #5f6775;
+  background-color: $bg-color-primary;
+}
+
+.dark .theme-switcher-svg.dark {
+  stroke: $text-color-accent;
+  background-color: $bg-color-dark;
+}

@@ -1,3 +1,14 @@
-h1 {
-  color: red;
-}
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './components/body';
+@import './components/header-main';
+
+
+@import './components/header-logo';
+@import './components/header-modal';
+@import './components/header-nav';
+@import './components/header-form-seach';
+@import './components/theme-switcher';
+@import './components/theme-switcher-container';
+@import './components/header-burger-menu';
+// @import './components/new';

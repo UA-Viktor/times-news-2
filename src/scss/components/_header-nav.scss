@@ -1,0 +1,135 @@
+.header-nav-ul {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+
+  margin-top: 44px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 44px;
+    width: auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // display: flex;
+    gap: 69px;
+  }
+}
+
+.is-hidden .header-nav-ul {
+  display: flex;
+  width: 320px;
+}
+
+.header-nav-li {
+  width: 288px;
+  height: 44px;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 2px solid $bg-color-primary;
+
+  &:hover {
+    border-bottom: 2px solid $text-color-accent;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.dark .header-nav-li {
+  border-bottom: 2px solid $bg-color-dark;
+  background-color: $bg-color-dark;
+
+  &:hover {
+    border-bottom: 2px solid $text-color-accent;
+
+    .header-nav-svg-arrow {
+      stroke: $bg-color-primary;
+    }
+
+    .header-nav-svg {
+      border: 1.5px solid $bg-color-primary;
+    }
+  }
+}
+
+.header-nav-a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.header-nav-svg {
+  border-radius: 50%;
+  border: 1.5px solid $bg-color-primary;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.dark .header-nav-svg {
+  border-radius: 50%;
+  border: 1.5px solid $bg-color-dark;
+}
+
+.header-nav-svg-arrow {
+  margin-left: auto;
+  stroke: $bg-color-primary;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.dark .header-nav-svg-arrow {
+  stroke: $bg-color-dark;
+}
+
+.header-nav-text {
+  margin-left: 14px;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.33;
+
+  color: $text-color-primary;
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.38;
+  }
+}
+
+.dark .header-nav-text {
+  color: $bg-color-primary;
+}

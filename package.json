@@ -2,6 +2,7 @@
   "name": "times-news-2",
   "version": "2.0.0",
   "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "homepage": "https://UA-Viktor.github.io/times-news-2",
   "scripts": {
     "start": "parcel src/*.html",

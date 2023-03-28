@@ -1,0 +1,48 @@
+.header-form-search {
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.form-search {
+  position: relative;
+}
+
+.form-input {
+  display: block;
+  width: 121px;
+  height: 19px;
+  padding: 5px 10px 5px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: $bg-color-primary;
+  color: $text-color-primary;
+  border: 1px solid $text-color-dark;
+  border-radius: 25px;
+
+  @media screen and (min-width: $tablet) {
+    width: 191px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 266px;
+  }
+}
+
+.form-button {
+  position: absolute;
+
+  top: 50%;
+  left: 20px;
+
+  transform: translate(-50%, -50%) scale(1);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $bg-color-primary;
+}

@@ -1,0 +1,31 @@
+.logo {
+    text-decoration: none;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    color: $text-color-primary;
+
+    @media (min-width: $mobile) {
+
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 48px;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 102px;
+        font-size: 42px;
+        line-height: 57px;
+    }
+
+}
+
+.dark .logo{
+    color: $bg-color-primary;
+}

@@ -9,11 +9,149 @@
     <link rel="stylesheet" href="./scss/main.scss" />
     <script type="module" src="./index.js"></script>
 
-    <title>Document</title>
+    <title>News</title>
+
 </head>
 
 <body>
-    <h1>Hello</h1>
+
+    <header>
+        <section class="section fixed">
+            <div class="container">
+                <div class="header-main">
+                    <!-- header-logo -->
+                    <div class="header-logo">
+                        <a href="index.html" class="logo">
+                            News
+                        </a>
+                    </div>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <!-- Содержимое модального окна -->
+
+                            <!-- header-nav -->
+                            <div class="header-nav">
+                                <ul class="header-nav-ul">
+                                    <li class="header-nav-li">
+                                        <a class="header-nav-a" href="index.html">
+                                            <svg class="header-nav-svg" width="32" height="32">
+                                                <use href="./images/symbol-defs.svg#icon-circle_house">
+                                                </use>
+                                            </svg>
+                                            <span class="header-nav-text">Home</span>
+                                            <svg class="header-nav-svg-arrow" width="24" height="24">
+                                                <use href="./images/symbol-defs.svg#icon-chevron-right">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="header-nav-li">
+                                        <a class="header-nav-a" href="index.html">
+                                            <svg class="header-nav-svg" width="32" height="32">
+                                                <use href="./images/symbol-defs.svg#icon-circle_heart">
+                                                </use>
+                                            </svg>
+                                            <span class="header-nav-text">Favorite</span>
+                                            <svg class="header-nav-svg-arrow" width="24" height="24">
+                                                <use href="./images/symbol-defs.svg#icon-chevron-right">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="header-nav-li">
+                                        <a class="header-nav-a" href="index.html">
+                                            <svg class="header-nav-svg" width="32" height="32">
+                                                <use href="./images/symbol-defs.svg#icon-circle_book">
+                                                </use>
+                                            </svg>
+                                            <span class="header-nav-text">Read</span>
+                                            <svg class="header-nav-svg-arrow" width="24" height="24">
+                                                <use href="./images/symbol-defs.svg#icon-chevron-right">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- _header-form-seach -->
+                            <div class="header-form-search ">
+                                <form class="form-search " role="search" id="form-search">
+                                    <input class="form-input" type="" placeholder="Search |" aria-label="Search"
+                                        name="searchQuery" autocomplete="off">
+
+                                    <button class="form-button">
+                                        <svg class="form-button-svg" width="20" height="20">
+                                            <use href="./images/symbol-defs.svg#icon-search">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- theme-switcher -->
+                            <div class="theme-switcher-container">
+                                <span class="theme-switcher-text light">Light</span>
+                                <svg class="theme-switcher-svg light" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-sun">
+                                    </use>
+                                </svg>
+                                <label class="switch">
+                                    <input type="checkbox" class="theme-switcher">
+                                    <span class="slider"></span>
+                                </label>
+
+                                <span class="theme-switcher-text dark">Dark</span>
+                                <svg class="theme-switcher-svg dark" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#icon-moon">
+                                    </use>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- button-menu -->
+                    <button class="button-menu" aria-expanded="false">
+                        <svg class="button-menu-svg" width="24" height="24" aria-label="Перемикач мобільного меню">
+                            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                            <use class="icon-close" href="./images/symbol-defs.svg#icon-menu-x"></use>
+                        </svg>
+                    </button>
+
+
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <hr />
+
+
+    <main>
+
+        <section class="section">
+            <div class="container">
+                Hello 2
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                Hello 3
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="section">
+            <div class="container">
+                Hello 4
+            </div>
+        </section>
+    </footer>
+
 </body>
 
 </html>

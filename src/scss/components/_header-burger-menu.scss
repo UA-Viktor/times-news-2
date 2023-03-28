@@ -1,0 +1,38 @@
+.button-menu {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: $bg-color-primary;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.button-menu {
+  stroke: $text-color-primary;
+}
+
+.dark .button-menu {
+  background-color: $bg-color-dark;
+  stroke: $bg-color-primary;
+}
