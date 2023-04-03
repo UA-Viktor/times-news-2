@@ -1,8 +1,11 @@
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.footer-down {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
+.footer {
+  margin-top: auto;
   background-color: $bg-color-dark;
 }
 

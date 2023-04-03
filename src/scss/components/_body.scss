@@ -35,9 +35,15 @@ hr {
   }
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   background-color: $bg-color-primary;
+  height: 100%;
 }
 
 .dark {
@@ -53,7 +59,7 @@ body {
 }
 
 .dark .section.fixed {
-    background-color: $bg-color-dark;
+  background-color: $bg-color-dark;
 }
 
 .container {
